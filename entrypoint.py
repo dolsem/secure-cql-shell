@@ -1,7 +1,7 @@
 import sys
 import os
 
-HELP = ''
+HELP = 'See https://github.com/dolsem/secure-cql-shell/blob/main/README.md'
 
 if not 'cert' in os.environ:
   print('Error: missing "cert" environment variable. ' + HELP, file=sys.stderr)
