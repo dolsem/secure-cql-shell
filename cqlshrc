@@ -1,0 +1,4 @@
+[ssl]
+validate = false
+userkey = /key.pem
+usercert = /cert.pem
