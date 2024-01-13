@@ -36,6 +36,7 @@ jobs:
           tags: |
             type=match,pattern=v(\d+.\d+.\d+-scylla),group=1
             type=raw,value=latest-scylla
+            type=raw,value=latest,enable=false
       
       - name: Build and push Docker image
         uses: docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671
