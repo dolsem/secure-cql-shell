@@ -33,10 +33,11 @@ jobs:
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
           images: dols3m/secure-cql-shell
+          flavor: |
+            latest=false
           tags: |
             type=match,pattern=v(\d+.\d+.\d+-scylla),group=1
             type=raw,value=latest-scylla
-            type=raw,value=latest,enable=false
       
       - name: Build and push Docker image
         uses: docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671
